@@ -1,0 +1,39 @@
+FlappyBirdRL/
+├── assets/                     # Game assets (images, fonts, audio)
+│   ├── bird.png
+│   ├── pipe.png
+│   ├── base.png
+│   ├── background.png
+│   └── flappy-font.ttf
+├── config/                     # Configuration files
+│   ├── settings.py             #   Game settings (screen size, FPS)
+│   └── rl_config.py            # RL hyperparameters
+├── core/                       # Core game logic
+│   ├── game.py                 #   Main game loop
+│   ├── bird.py                 #   Bird class
+│   ├── base.py                 #   Base class
+│   ├── pipe.py                 #   Pipe class
+│   └── background.py           #   Background class
+├── rl/                         # Reinforcement learning components
+│   ├── dqn.py                  #   Deep Q-Network model 
+│   ├── replay_buffer.py        #   Replay buffer implementation
+│   └── agent.py                #   RL agent (actions, training)
+├── scripts/                    # Training and debug utilities
+│   ├── train.py                # Train the agent
+│   ├── evaluate.py             # Evaluate agent performance
+│   └── visualize.py            # View training progress
+├── tests/                      # Unit tests
+│   ├── test_game.py            #   Game logic tests
+│   ├── test_rl.py              #   RL component tests
+│   └── test_utils.py           # Utility function tests
+├── logs/                       # Training outputs
+│   ├── checkpoints/            # Model checkpoints
+│   ├── training_logs.txt       # Training progress
+│   └── evaluation_results.txt  # Evaluation results
+├── utils/                      # Helper functions
+│   ├── state_utils.py          # State processing
+│   ├── draw_utils.py           # Screen drawing
+│   └── file_utils.py           # File management
+├── main.py                     # Main entry point
+├── requirements.txt            # Dependencies
+└── README.md                   # Documentation 
